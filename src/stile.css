@@ -30,11 +30,33 @@
     3px 3px 40px #087066;
     text-align: center;
 }
-.main:hover{
+.maint1{
+     width: 30%;
+    height: 13%;
+    position: absolute;
+    top: 120%;
+    left: 35%;
+    background-color: #0aa0c9;
+    box-shadow: -3px -3px 40px #12588d,
+    3px 3px 40px #087066;
+    text-align: center;
+}
+.maint2{
+     width: 30%;
+    height: 13%;
+    position: absolute;
+    top: 120%;
+    left: 35%;
+    background-color: #0aa0c9;
+    box-shadow: -3px -3px 40px #12588d,
+    3px 3px 40px #087066;
+    text-align: center;
+}
+/* .main:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 
 
 .main2{
@@ -48,11 +70,11 @@
     3px 3px 40px #087066;
     text-align: center;
 }
-.main2:hover{
+/* .main2:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 .main3{
      width: 30%;
     height: 13%;
@@ -64,11 +86,11 @@
     3px 3px 40px #087066;
     text-align: center;
 }
-.main3:hover{
+/* .main3:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 
 .maind{
      width: 30%;
@@ -81,11 +103,11 @@
     3px 3px 40px #032723;
     text-align: center;
 }
-.maind:hover{
+/* .maind:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 
 .maind2{
      width: 30%;
@@ -98,11 +120,11 @@
     3px 3px 40px #032723;
     text-align: center;
 }
-.maind3:hover{
+/* .maind3:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 
 .maind3{
      width: 30%;
@@ -115,11 +137,11 @@
     3px 3px 40px #032723;
     text-align: center;
 }
-.maind2:hover{
+/* .maind2:hover{
      position: absolute;
     opacity: 1;
     transform: scale(1.01);
-}
+} */
 .l{
      
      position:static;
