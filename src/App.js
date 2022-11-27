@@ -30,9 +30,14 @@ function App() {
           r('button',{ className : 'bn16', onClick: changeClicked }, clicked ? tema2 : tema1 ),
           r('button',{ className : 'bn16', onClick: changeP}, 'about me')),
       
+      r('div',{ className: cl ? 'd' : 'l' },),
+          
+      r('div',{ className: cl ? 'd2' : 'l2' },
+        r('div',{className: cl ? 'maint1' : 'maint'})),
+          
       r('div',{ className: cl ? 'd' : 'l' }),
-      r('div',{ className: cl ? 'd2' : 'l2' }),
-      r('div',{ className: cl ? 'd' : 'l' }),
+
+
       r('script',{src: 'src/amim.js'})
   ];
   
