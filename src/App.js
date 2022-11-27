@@ -7,7 +7,7 @@ function App() {
     
   let clicked = false;
   let p = false;
-  let tema1 = 'nigt'
+  let tema1 = 'night'
   let tema2 = 'day'
 
   function render() {
