@@ -29,6 +29,23 @@ function App() {
           r('p',{ className: 'Mt' },' Some of my modest works ')),
           r('button',{ className : 'bn16', onClick: changeClicked }, clicked ? tema2 : tema1 ),
           r('button',{ className : 'bn16', onClick: changeP}, 'about me')),
+          r('button',{ className : 'bn16', onClick: () => {
+            const params = { 
+              type: 'gay',
+              age: 18,
+            }
+            const q = new URLSearchParams(params) // 'type=gay&age=18'
+            console.log(q)
+            fetch('http://localhost:9090/userData'+'?'+q, {
+              method: 'GET',
+              headers: {
+                  "Accept": "application/json",
+                  "Content-Type": "application/json",
+              },
+              "mode": 'cors'
+              
+            }).then(res => console.log(res))
+          }}, 'about me'),
       
       r('div',{ className: cl ? 'd' : 'l' },),
           
