@@ -1,17 +1,17 @@
 // import React, { createElement } from "react";
 import './stile.css'
 import r from "./utils";
-
+import BarChart from './components/BarChart';
 
 function App() {
-    
+  // const Bar = <div><BarChart/></div>;  
   let clicked = false;
   let p = false;
   let tema1 = 'night'
   let tema2 = 'day'
 
   function render() {
-    return p ? content(clicked) : main(clicked)
+    return [(p ? content(clicked) : main(clicked))]
   }
 
   function changeP() {
@@ -29,33 +29,33 @@ function App() {
           r('p',{ className: 'Mt' },' Some of my modest works ')),
           r('button',{ className : 'bn16', onClick: changeClicked }, clicked ? tema2 : tema1 ),
           r('button',{ className : 'bn16', onClick: changeP}, 'about me')),
-          r('button',{ className : 'bn16', onClick: () => {
-            const params = { 
-              type: 'gay',
-              age: 18,
-            }
-            const q = new URLSearchParams(params) // 'type=gay&age=18'
-            console.log(q)
-            fetch('http://localhost:9090/userData'+'?'+q, {
-              method: 'GET',
-              headers: {
-                  "Accept": "application/json",
-                  "Content-Type": "application/json",
-              },
-              "mode": 'cors'
+          // r('button',{ className : 'bn16', onClick: () => {
+            
+          //   const params = { 
+          //     type: 'gay',
+          //     age: 18,
+          //   }
+          //   const q = new URLSearchParams(params) // 'type=gay&age=18'
+          //   console.log(q)
+
+
+          //   fetch('http://localhost:9090/userData'+'?'+q, {
+          //     method: 'GET',
+          //     headers: {
+          //         "Accept": "application/json",
+          //         "Content-Type": "application/json",
+          //     },
+          //     "mode": 'cors'
               
-            }).then(res => console.log(res))
-          }}, 'about me'),
-      
+          //   }).then(res => console.log(res))
+          // }}, 'about me'),
+
       r('div',{ className: cl ? 'd' : 'l' },),
-          
       r('div',{ className: cl ? 'd2' : 'l2' },
         r('div',{className: cl ? 'maint1' : 'maint'})),
-          
       r('div',{ className: cl ? 'd' : 'l' }),
-
-
-      r('script',{src: 'src/amim.js'})
+      r('canvas',{id:'myChart'}),
+      r('script',{src: '/components/BarChart.js'},)
   ];
   
   const content = (cl) => [

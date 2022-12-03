@@ -245,7 +245,8 @@ body { font-family: 'Work Sans', sans-serif;
      font-size: 22px;
      line-height: 33px;
      text-align: center;
-      background-color: #1a51e8;}
+      /* background-color: #1a51e8; */
+     }
 
 /* .pic { position : relative ; bottom: 5px;
      left: 540px; } */
@@ -276,3 +277,4 @@ body { font-family: 'Work Sans', sans-serif;
           border: 3px solid #10bed2;
           border-radius: 25px;
         }
+        #myChart { height: 500px; width: 500px; overflow: hidden; }
