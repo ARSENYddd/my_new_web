@@ -22,7 +22,7 @@ function App() {
       clicked = !clicked
     
   }
-
+  let f = 0;
   const main = (cl) => [
       r('div',{ className: cl ? 'centerd' : 'center' },
           r('div',{ className: cl ? 'maind' : 'main' },
@@ -50,12 +50,10 @@ function App() {
           //   }).then(res => console.log(res))
           // }}, 'about me'),
 
-      r('div',{ className: cl ? 'd' : 'l' },),
-      r('div',{ className: cl ? 'd2' : 'l2' },
-        r('div',{className: cl ? 'maint1' : 'maint'})),
-      r('div',{ className: cl ? 'd' : 'l' }),
-      r('canvas',{id:'myChart'}),
-      r('script',{src: '/components/BarChart.js'},)
+     
+      // f && r('canvas', { id: 'myChart'}),
+      r('script',{src: '/components/BarChart.js'}),
+      (() => { f = 1 })()
   ];
   
   const content = (cl) => [
